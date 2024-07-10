@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.util.UUID;
 
-//  Servlet implementation class AdminLogin
+//  Servlet implementation class AdminLogin 
 
 @WebServlet("/AdminLogin")
 public class AdminLogin extends HttpServlet {
@@ -24,7 +24,7 @@ public class AdminLogin extends HttpServlet {
 		String pass = request.getParameter("password");
 		try {
 			String tokens = UUID.randomUUID().toString();
-//			System.out.println(tokens);
+//			System.out.println(tokens); Check token
 			HttpSession hs = request.getSession();
 			Connection con = DatabaseConnection.getConnection();
 			Statement st = con.createStatement();
