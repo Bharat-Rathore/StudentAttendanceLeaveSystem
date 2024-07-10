@@ -12,9 +12,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.util.UUID;
-/**
- * Servlet implementation class AdminLogin
- */
+
+//  Servlet implementation class AdminLogin
+
 @WebServlet("/AdminLogin")
 public class AdminLogin extends HttpServlet {
 
